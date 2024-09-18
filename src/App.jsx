@@ -6,9 +6,9 @@ import Navbar from './Components/Navbar'
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './Components/HomePage';
-// import ProductsPage from './Component/Pages/ProductsPage';
-// import AboutPage from './Component/Pages/AboutPage';
-// import ContactPage from './Component/Pages/ContactPage';
+import AboutPage from './Components/Pages/AboutPage';
+import ContactPage from './Components/Pages/ContactPage';
+
 
 function App() {
 
@@ -21,8 +21,8 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         {/* <Route path="/products" element={<ProductsPage />} /> */}
-        {/* <Route path="/about" element={<AboutPage />} /> */}
-        {/* <Route path="/contact" element={<ContactPage />} /> */}
+        <Route path="/about" element={<AboutPage/>} />
+        <Route path="/contact" element={<ContactPage/>} />
       </Routes>
       </div>
     </div>
